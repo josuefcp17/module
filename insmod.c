@@ -7,12 +7,12 @@
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Tu Nombre");
 
-// Variables de entrada para el módulo
+
 static float peso = 0;
-static float talla = 1;  // Inicia en 1 para evitar división por cero
+static float talla = 1;  
 static char *genero = "desconocido";
 
-// Descripción de los parámetros del módulo
+
 module_param(peso, float, S_IRUSR | S_IWUSR);
 MODULE_PARM_DESC(peso, "Peso de la persona (en kg)");
 
